@@ -1,11 +1,15 @@
 <?php
 class Database{
 
-    // specify your own database credentials
+//connection details
+    //--- REMOVE BEFORE PUSHING TO GITHUB ----
     private $host = "localhost";
     private $db_name = "api_db";
     private $username = "root";
     private $password = "";
+    //--- REMOVE BEFORE PUSHING TO GITHUB ----\\
+
+
     public $conn;
 
     // get the database connection
