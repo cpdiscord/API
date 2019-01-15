@@ -3,10 +3,10 @@ class Database{
 
 //connection details
     //--- REMOVE BEFORE PUSHING TO GITHUB ----
-    private $host = "localhost";
-    private $db_name = "api_db";
-    private $username = "root";
-    private $password = "";
+    private $host = ""; //IP
+    private $db_name = ""; //DB Name
+    private $username = ""; // SQL USER
+    private $password = ""; // SQL password
     //--- REMOVE BEFORE PUSHING TO GITHUB ----\\
 
 
