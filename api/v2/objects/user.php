@@ -6,10 +6,8 @@
 
     //object
     public $id
-    public $name;
-    public $description;
-    public $createdBy;
-    public $configJson
+    public $username;
+    public $authkey;
     public $created;
 
     //Construct
@@ -22,7 +20,7 @@
 
       // select all query
       $query = "SELECT
-                  c.name as name, p.id, p.name, p.description, p.createdBy, p.configJson, p.created;
+                  c.username as c.authkey, c.created, c.id
               FROM
                   " . $this->table_name . " p
                   LEFT JOIN
