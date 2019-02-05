@@ -22,7 +22,7 @@
 
       // select all query
       $query = "SELECT
-                  c.name as name, p.id, p.name, p.description, p.createdBy, p.configJson, p.created;
+                 *
               FROM
                   " . $this->table_name . " p
                   LEFT JOIN
