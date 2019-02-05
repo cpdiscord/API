@@ -3,10 +3,10 @@ class Database{
 
 //connection details
     //--- REMOVE BEFORE PUSHING TO GITHUB ----
-    private $host = ""; //IP
-    private $db_name = ""; //DB Name
-    private $username = ""; // SQL USER
-    private $password = ""; // SQL password
+    private $host = "localhost"; //IP
+    private $db_name = "creatext_apis"; //DB Name
+    private $username = "creatext_apis"; // SQL USER
+    private $password = "creatext_apis"; // SQL password
     //--- REMOVE BEFORE PUSHING TO GITHUB ----\\
 
 
