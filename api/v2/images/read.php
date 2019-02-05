@@ -20,6 +20,7 @@ if (!empty($data->id))
     http_response_code(400);
 
     echo json_encode(array("Status" => "400", "Message" => "Requires ID to search for"));
+    exit;
 }
 // initialize object
 $image = new Image($db);
