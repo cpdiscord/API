@@ -5,7 +5,7 @@
     private $table_name = "images";
 
     //object
-    public $id;
+    public $id;    
     public $name;
     public $description;
     public $createdBy;
@@ -21,7 +21,7 @@
     function read(){
 
       // select all query
-      $query = "SELECT * FROM images";
+      $query = "SELECT * FROM `images`";
 
       // prepare query statement
       $stmt = $this->conn->prepare($query);
