@@ -17,6 +17,19 @@
       $this->conn = $db;
     }
 
+    function readLastId()){
+
+        // select all query
+        $query = "SELECT id FROM `images` ORDER BY `id` ASC LIMIT 1";
+  
+        // prepare query statement
+        $stmt = $this->conn->prepare($query);
+  
+        // execute query
+        $stmt->execute();
+  
+        return $stmt;
+      }
     // read products
     function read($id){
 
@@ -42,9 +55,9 @@ function create(){
  
     // sanitize
     $this->name=htmlspecialchars(strip_tags($this->name));
-    $this->price=htmlspecialchars(strip_tags($this->description));
+    $this->configJson=htmlspecialchars(strip_tags($this->configJson));
     $this->description=htmlspecialchars(strip_tags($this->description));
-    $this->category_id=htmlspecialchars(strip_tags($this->category_id));
+    $this->createdBy=htmlspecialchars(strip_tags($this->createdBy));
     $this->created=htmlspecialchars(strip_tags($this->created));
  
     // bind values
