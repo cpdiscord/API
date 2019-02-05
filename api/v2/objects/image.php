@@ -9,7 +9,7 @@
     public $name;
     public $description;
     public $createdBy;
-    public $configJson
+    public $configJson;
     public $created;
 
     //Construct
