@@ -26,31 +26,31 @@ if(
     !empty($data->configJson)
 ){
  
-    // set product property values
-    $product->name = $data->name;
-    $product->description = $data->description;
-    $product->createdBy = $data->createdBy;
-    $product->configJson = $data->configJson;
-    $product->created = date('Y-m-d H:i:s');
+    // set image property values
+    $image->name = $data->name;
+    $image->description = $data->description;
+    $image->createdBy = $data->createdBy;
+    $image->configJson = $data->configJson;
+    $image->created = date('Y-m-d H:i:s');
  
-    // create the product
-    if($product->create()){
+    // create the image
+    if($image->create()){
  
         // set response code - 201 created
         http_response_code(201);
  
         // tell the user
-        echo json_encode(array("message" => "Product was created."));
+        echo json_encode(array("message" => "image was created."));
     }
  
-    // if unable to create the product, tell the user
+    // if unable to create the image, tell the user
     else{
  
         // set response code - 503 service unavailable
         http_response_code(503);
  
         // tell the user
-        echo json_encode(array("message" => "Unable to create product."));
+        echo json_encode(array("message" => "Unable to create image."));
     }
 }
  
@@ -61,11 +61,11 @@ else{
     http_response_code(400);
  
     // tell the user
-    echo json_encode(array("message" => "Unable to create product. Data is incomplete."));
+    echo json_encode(array("message" => "Unable to create image. Data is incomplete."));
 }
 
 
-// create product
+// create image
 function create(){
  
     // query to insert record
