@@ -5,7 +5,7 @@
     private $table_name = "images";
 
     //object
-    public $id
+    public $id;
     public $name;
     public $description;
     public $createdBy;
