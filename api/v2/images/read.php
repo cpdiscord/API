@@ -14,7 +14,7 @@ $data = json_decode(file_get_contents("php://input"));
 $id = 0;
 if (!empty($data->id))
 {
-    $id = $configJson+data->id;
+    $id = $data->id;
 } else
 {
     http_response_code(400);
