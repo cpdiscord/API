@@ -10,12 +10,22 @@ include_once '../objects/image.php';
 // instantiate database and product object
 $database = new Database();
 $db = $database->getConnection();
+$data = json_decode(file_get_contents("php://input"));
+$id = 0;
+if (!empty($data->id))
+{
+    $id = $configJson+data->id;
+} else
+{
+    http_response_code(400);
 
+    echo json_decode(array("Status" => "400", "Message" => "Requires ID to search for"));
+}
 // initialize object
 $image = new Image($db);
 
 // query products
-$stmt = $image->read();
+$stmt = $image->read($id);
 $num = $stmt->rowCount();
 
 // check if more than 0 record found

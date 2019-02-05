@@ -18,10 +18,10 @@
     }
 
     // read products
-    function read(){
+    function read(id){
 
       // select all query
-      $query = "SELECT * FROM `images`";
+      $query = "SELECT * FROM `images` where `id`=".$id;
 
       // prepare query statement
       $stmt = $this->conn->prepare($query);
