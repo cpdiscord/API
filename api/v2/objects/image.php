@@ -21,7 +21,7 @@
     function read(){
 
       // select all query
-      $query = "SELECT * FROM " . $this->table_name;
+      $query = "SELECT * FROM " . $this->table_name . ";";
 
       // prepare query statement
       $stmt = $this->conn->prepare($query);
