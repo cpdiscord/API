@@ -18,7 +18,7 @@
     }
 
     // read products
-    function read(id){
+    function read($id){
 
       // select all query
       $query = "SELECT * FROM `images` where `id`=".$id;
