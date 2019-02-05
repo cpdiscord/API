@@ -43,8 +43,8 @@ if($num>0)
     http_response_code(200);
 
     // show products data in json format
-    //echo json_encode($products_arr);
-    echo images["id"];
+    echo json_encode($image_arr);
+    
 }}else{
 
     // set response code - 404 Not found
