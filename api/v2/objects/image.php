@@ -17,7 +17,7 @@
       $this->conn = $db;
     }
 
-    function readLastId()){
+    function readLastId(){
 
         // select all query
         $query = "SELECT id FROM `images` ORDER BY `id` ASC LIMIT 1";
