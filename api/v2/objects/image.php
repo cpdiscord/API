@@ -30,7 +30,7 @@
   
         return $stmt;
       }
-      function read()){
+      function read(){
 
         // select all query
         $query = "SELECT * FROM `images`";
