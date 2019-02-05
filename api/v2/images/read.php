@@ -19,7 +19,8 @@ $stmt = $product->read();
 $num = $stmt->rowCount();
 
 // check if more than 0 record found
-if($num>0){
+if($num>0)
+{
   $image_arr = array();
   $image_arr["records"] = array();
 
@@ -43,8 +44,7 @@ if($num>0){
 
     // show products data in json format
     echo json_encode($products_arr);
-}
-else{
+}else{
 
     // set response code - 404 Not found
     http_response_code(404);
