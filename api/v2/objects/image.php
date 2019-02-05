@@ -48,7 +48,7 @@
 function create(){
  
     // query to insert record
-    $query = "INSERT INTO images SET name=:name, description=:description, configJson=:configJson, created=:created";
+    $query = "INSERT INTO images SET name=:name, description=:description, configJson=:configJson, created=:created, createdBy=:createdBy";
  
     // prepare query
     $stmt = $this->conn->prepare($query);
