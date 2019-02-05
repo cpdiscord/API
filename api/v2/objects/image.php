@@ -30,8 +30,21 @@
   
         return $stmt;
       }
+      function read()){
+
+        // select all query
+        $query = "SELECT * FROM `images`";
+  
+        // prepare query statement
+        $stmt = $this->conn->prepare($query);
+  
+        // execute query
+        $stmt->execute();
+  
+        return $stmt;
+      }
     // read products
-    function read($id){
+    function readbyID($id){
 
       // select all query
       $query = "SELECT * FROM `images` where `id`=".$id;
