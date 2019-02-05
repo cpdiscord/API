@@ -30,13 +30,13 @@ if($num>0){
         extract($row);
 
         $image_item = array(
-          "id" = $id,
-          "name" = $name,
-          "description" = $description,
-          "createdBy" = $createdBy,
-          "configJson" = $configJson,
-          "created" = $created
-        )
+          "id" => $id,
+          "name" => $name,
+          "description" => $description,
+          "createdBy" => $createdBy,
+          "configJson" => $configJson,
+          "created" => $created
+        );
         array_push($image_arr["records"], $image_item);
         // set response code - 200 OK
     http_response_code(200);
